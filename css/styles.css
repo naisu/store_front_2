@@ -119,11 +119,11 @@ body{
 }
 
 .deal{
-    position: absolute;
-    top: 460px;
-    left: 28%;
-    z-index: 1;
-    height: 18%;
+    width: 75%;
+}
+
+.homeproduct{
+width: 100%;
 }
 
 .container {
@@ -154,15 +154,13 @@ body{
   }
   .div1 {
     grid-area: div1;
+    alignment-adjust: center;
     border: 8px solid rgb(253, 122, 122);
     padding: 6px 12px;
     display: inline-block;
     background-color:snow;
   }
-  .div1 img{
-      position: relative;
-      top:170px;
-  }
+  
   .div2 {
     grid-area: div2;
     border: 8px solid rgb(253, 122, 122);
@@ -170,12 +168,7 @@ body{
     display: inline-block;
     background-color: #ffabab;
   }
-  .div2 img{
-    position: relative;
-    height:450px;
-    width:300px;
-    top:10px;
-  }
+ 
   .rightspace {
     grid-area: rightspace;
   }
@@ -277,32 +270,11 @@ hr.divide{
     height: 500px;
 }
 
-.div1 img{
-    position : relative;
-    top: 290px;
-}
-
-.div4 img{
-    height : 240px; 
-    width :230px;
-    position : absolute;
-    top: 1050px;
-    left:320px;
-}
-
 .div4 .item{
     height:400px;
     width:400px;
     left: 420px;
     top: 1130px;
-}
-
-.div5 img{
-    height : 240px; 
-    width :230px;
-    position : absolute;
-    top: 1050px;
-    left:950px;
 }
 
 .div5 .item{
@@ -312,13 +284,6 @@ hr.divide{
     top: 1130px;
 }
 
-.div6 img{
-    height : 240px; 
-    width :230px;
-    position : absolute;
-    top: 1050px;
-    left:1590px;
-}
 
 .div6 .item{
     height:400px;
