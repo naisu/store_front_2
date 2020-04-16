@@ -260,6 +260,12 @@ hr.divide{
   }
 /*end of banner animation stuff feel free to touch*/
 
+.about{
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+}
+
 
 /*no touchy*/
 .image {
