@@ -248,11 +248,8 @@ hr.divide{
     z-index: -1;
   }
   
-  .moved{
-      position:absolute;
-      z-index:1;
-      left: 47%;
-      
+  .logo{
+    height: 3em;
   }
   
   @keyframes slide{
@@ -335,3 +332,12 @@ hr.divide{
     height: 400px;
     width: 1800px;
 }
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li.rightActive,
+  ul.topnav li.active,  
+  ul.topnav li input,
+  ul.topnav li {float: none;
+  width: 100%;
+}
+
