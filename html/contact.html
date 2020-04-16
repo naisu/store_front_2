@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <head>
+        <meta charset="UTF-8">
+	    <title>Welcome to Nook's Cranny!</title> 
+        <link href="../css/styles.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Send Us Mail!</title> <!--Change-->
-</head>
+  
+   </head>
+   
+	
+        <center> <!--Centers the Logo-->
+            <a href=index.html> <!--Redirect to index.html-->
+                <img class="logo" src="../images/frontpage/logo.png" alt="Nook's Cranny" height >
+            </a>
+        </center>
+	
+    
+    <ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="./product_page/product_prototype.html">Products</a></li>
+  <li><a class="active"  href="contact.html">Contact</a></li>
+  <button class="froggybutton" onclick="document.location = './product_page/furniture/froggy_chair.html'">Feeling Froggy?</button>
+  <li class="right"><a href="shopping_cart.html"><img class="cart" src="../images/cart.png" alt="Cart"></a></li>
+  <li class="right"><a href="login_page.html">Log In</a></li>
+  <li class="right"><input type="text" placeholder ="Search..."> </li>
+</ul>
+
+    </header>
 
 <body background = "../images/bg.png">
-<center> <!--Centers the Logo-->
-	<a href=index.html> <!--Redirect to index.html-->
-		<img src="../images/nooks_cranny.png" alt="Nook's Cranny" height = "100" width = "250"> <!--Change-->
-	</a>
-	<div class="Navigation">
-	<center>
-	<font size = "50"> <a href=index.html>Home</a> </font>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<font size = "50"> <a href=../product_page/product_prototype.html>Products</a> </font>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<font size = "50"><a href=contact.html>Contact Us</a> </font>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<font size = "50"><input type="text" placeholder ="Search..."> </font>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<font size = "50"><a href=login_page.html>Login</a></font>
-  </center>
-</div> 
+
 
 <hr>
 <br>
@@ -36,14 +42,17 @@
 	<p><b>Have Any Questions?</b></p>
 
 	<form name="login">
-            Name <input type="text" name="userid"/>
+	
+            Name <input type="text" placeholder="Enter Name" name="userid"/>
 			<br>
-            Email <input type="email" name="pswrd"/>
+            Email <input type="email" placeholder="Enter Email "name="pswrd"/>
 	</form>
 
 	<p>Comments: </p>
+	<div style="border:2px solid black">
 	<p><textarea rows="10" cols="50" name="comments"></textarea></p>
 	<button type="button">Submit</button> 
+	</div>
 </center>
 	
 
