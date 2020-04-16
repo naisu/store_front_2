@@ -9,8 +9,8 @@
 }
 
 body{
- 	background-color: seashell;
- 	background-image: linear-gradient(to top left, lightblue, white);
+    background-color: seashell;
+    background-image: linear-gradient(to top left, lightblue, white);
     color: rgb(255, 122, 117);
     text-decoration: none;
     font-size: 60px;
@@ -19,94 +19,92 @@ body{
 }
 
 .vertad{
-width: 100%;
-  border: 0.1em solid white;
-}
- .horizad{
-max-height: 5em;
-width: 95%;
-border-radius: 0.25em;
-  border: 0.1em solid white;
-}
-
-.cart{
-max-height:0.75em;
-}
-
-ul.topnav {
-height: 1 em;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-border-radius: 0.25em;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-font-size: 0.5em;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-}
-ul.topnav li input {
-display: block;
-font-size: 0.5em;
-padding: 10px 10px;
-width: 150px;
-color: white;
-}
-
-
-ul.topnav li a:hover:not(.active):not(.rightActive) {background-color: #111;}
-
-
-ul.topnav li a.active {background-color: firebrick;}
-
-ul.topnav li.right {float: right;}
-ul.topnav li.rightActive {float: right;
-background-color:firebrick;
-}
-
-.froggybutton{
-height: 1.82em;
-background-color: #4CAF50; /* Green */
-  color: white;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  width: 100%;
+    border: 0.1em solid white;
+  }
+   .horizad{
+  max-height: 5em;
+  width: 95%;
+  border-radius: 0.25em;
+    border: 0.1em solid white;
+  }
+  
+  .cart{
+  max-height:0.75em;
+  }
+  
+  ul.topnav {
+  height: 1 em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  border-radius: 0.25em;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
   font-size: 0.5em;
-  border-radius: 0.5em;
-  //border: 0.1em;
-  position: absolute;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  ul.topnav li input {
+  display: block;
+  font-size: 0.5em;
+  padding: 10px 10px;
+  width: 150px;
+  color: white;
+  }
+  
+  ul.topnav li a:hover:not(.active):not(.rightActive) {background-color: #111;}
+  ul.topnav li a.active {background-color: firebrick;}
+  ul.topnav li.right {float: right;}
+  ul.topnav li.rightActive {
+    float: right;
+    background-color:firebrick;
+  }
+  
+  .froggybutton{
+  height: 1.82em;
+  background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.5em;
+    border-radius: 0.5em;
+    border: 0.1em;
+    position: absolute;
     left: 50%;
     transform: translate(-50%,0%);
-}
-
-.froggybutton:hover{
-background-color: darkgreen;
-}
-
-.Navigation{
-background-color: #333;
-border-radius: 0.5em;
-}
-
-.Navigation a{
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.Navigation a:hover{
-color: firebrick;
-}
+  }
+  
+  .froggybutton:hover{
+  background-color: darkgreen;
+  }
+  
+  .Navigation{
+  background-color: #333;
+  border-radius: 0.5em;
+  }
+  
+  .Navigation a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .Navigation a:hover{
+  color: firebrick;
+  }
+  
 
 .text{
     color: rgb(255, 8, 0);
@@ -122,32 +120,99 @@ color: firebrick;
 
 .deal{
     position: absolute;
-    top: 320px;
-      position: absolute;
-    left: 50%;
-    transform: translate(-50%,0%);
-    height: 15%;
-    
+    top: 460px;
+    left: 28%;
+    z-index: 1;
+    height: 18%;
 }
 
-#content{
+.container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    max-width: 2500px;
-    max-height: 10000px;
-    margin: 0 auto;
-    column-gap: 10px;
-    position: sticky;
-}
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "leftspace div1 div1 div2 rightspace"
+    "leftspace div1 div1 div3 rightspace"
+    "leftspace div4 div5 div6 rightspace"
+    "leftspace middlespace middlespace middlespace rightspace"
+    "leftspace div7 div7 div7 rightspace";
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 0.1fr 0.7fr;
+    justify-content:center;
+    text-align:center;
+    column-gap: 0.3em;
+    row-gap: 0.3em;
+    position: relative;
+    top:-200px;
+  }
 
-#content div{
-    background: #ffffff;
-    padding: 250px;
+  /*LEFTSPACE, RIGHTSPACE, and MIDDLESPACE are for making borders only because
+    I'm dumb as hell and don't know how to do margins properly.
+    Don't change em cause you won't like what happens next*/
 
-}
-#content div:nth-child(even){
-    background:#777;
-}
+  .leftspace {
+    grid-area: leftspace;
+  }
+  .div1 {
+    grid-area: div1;
+    border: 8px solid rgb(253, 122, 122);
+    padding: 6px 12px;
+    display: inline-block;
+    background-color:snow;
+  }
+  .div1 img{
+      position: relative;
+      top:170px;
+  }
+  .div2 {
+    grid-area: div2;
+    border: 8px solid rgb(253, 122, 122);
+    padding: 6px 12px;
+    display: inline-block;
+    background-color: #ffabab;
+  }
+  .div2 img{
+    position: relative;
+    height:450px;
+    width:300px;
+    top:10px;
+  }
+  .rightspace {
+    grid-area: rightspace;
+  }
+  .div3 {
+    grid-area: div3;
+    border: 8px solid rgb(253, 122, 122);
+    padding: 6px 12px;
+    display: inline-block;
+    background-color: aliceblue;
+  }
+  .div4 {
+    grid-area: div4;
+    border: 8px solid rgb(253, 122, 122);
+    padding: 6px 12px;
+    display: inline-block;
+    background-color:honeydew;
+  }
+  .div5 {
+    grid-area: div5;
+    border: 8px solid rgb(253, 122, 122);
+    padding: 6px 12px;
+    display: inline-block;
+    background-color: papayawhip;
+  }
+  .div6 {
+    grid-area: div6;
+    border: 8px solid rgb(253, 122, 122);
+    padding: 6px 12px;
+    display: inline-block;
+    background-color: lightcyan;
+  }
+  .middlespace {
+    grid-area: middlespace;
+  }
+  .div7 {
+    grid-area: div7;
+  }
 
 a{
     color: rgb(255, 122, 117);
@@ -166,78 +231,13 @@ hr.divide{
 }
 
 
-.home{
-    position: absolute;
-    top:200px;
-    left:260px;
-    border: 8px solid rgb(253, 122, 122);
-    padding: 6px 12px;
-    display: inline-block;
-    border-radius: 36px;
-}
-
-.furniture{
-    position: absolute;
-    top:200px;
-    left:660px;
-    border: 8px solid rgb(253, 122, 122);
-    padding: 6px 12px;
-    display: inline-block;
-    border-radius: 36px;
-}
-
-.clothing{
-    position: absolute;
-    top:200px;
-    left:1160px;
-    border: 8px solid rgb(253, 122, 122);
-    padding: 6px 12px;
-    display: inline-block;
-    border-radius: 36px;
-}
-
-.wallpapers{
-    position: absolute;
-    top:200px;
-    left:1650px;
-    border: 8px solid rgb(253, 122, 122);
-    padding: 6px 12px;
-    display: inline-block;
-    border-radius: 36px;
-}
-
-.flooring{
-    position: absolute;
-    top:200px;
-    left:2150px;
-    border: 8px solid rgb(253, 122, 122);
-    padding: 6px 12px;
-    display: inline-block;
-    border-radius: 36px;
-}
-
-.search{
-    position: absolute;
-    background-color: rgb(219, 99, 99);
-    opacity: 0.95;
-    top:310px;
-    right:0px;
-    float: right;
-    font-weight: bolder;
-    border: 8px solid rgb(253, 122, 122);
-    padding: 6px 12px;
-    display: block;
-    border-radius: 36px;
-    font-size: 45px;
-    font-family: Helvetica;
-}
-
+/*Start of banner animation don't touch*/
 .wrap {
     overflow: hidden;
   }
   
   .scrolling-bg {
-    background: url("acbanner.jpg") repeat-x;
+    background: url("../images/acbanner.jpg") repeat-x;
     opacity: 0.95;
     height: 600px;
     width: 5000px;
@@ -249,11 +249,11 @@ hr.divide{
   }
   
   .moved{
-       position: absolute;
-    left: 50%;
-    transform: translate(-50%,0%);
+      position:absolute;
+      z-index:1;
+      left: 47%;
+      
   }
-
   
   @keyframes slide{
     0%{
@@ -268,98 +268,70 @@ hr.divide{
         transform: translate3d(0, 0, 0);
     }
   }
-
-  .login{
-    position:absolute;
-    top:10px;
-    float: right;
-    right: 0px;
-    padding: 6px 12px;
-    display: inline-block;
-}
-
-.login mark{
-    color: rgb(255, 122, 117);
-    text-shadow: 0 0 10px #000000;
-    text-decoration: none;
-    font-size: 45px;
-    font-family: Helvetica;
-}
+/*end of banner animation stuff feel free to touch*/
 
 
-  /* Dropdown Button */
-.dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:rgba(96, 255, 91, 0.7);
-    min-width: 160px;
-    z-index: 1;
-    border: 8px solid rgb(253, 122, 122);
-    padding: 6px 12px;
-    border-radius: 36px;
-    font-size: 45px;
-    font-family: Helvetica;
-  }
-
-  .dropdown-content a:hover{
-    color: white;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: rgb(255, 122, 117);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .login:hover .dropdown-content {display: block;}
-
-.fling-minislide {
-    width:450; 
-    height:450;  
-    position:relative; 
-}
-.fling-minislide img{ 
-    position:absolute; 
-    animation:fling-minislide 26s infinite; 
-    opacity:0;}
-
-@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
-    .fling-minislide img:nth-child(4){animation-delay:0s;}
-    .fling-minislide img:nth-child(3){animation-delay:7s;}
-    .fling-minislide img:nth-child(2){animation-delay:13s;}
-    .fling-minislide img:nth-child(1){animation-delay:20s;}
-
+/*no touchy*/
 .image {
     float:  left;
     top: 200px;
     left: 37%;
-    width:  300px;
-    height: 300px;
+    width:  500px
+    height: 500px;
 }
 
+.div1 img{
+    position : relative;
+    top: 290px;
+}
 
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li.rightActive,
-  ul.topnav li.active,  
-  ul.topnav li input,
-  ul.topnav li {float: none;
-  width: 100%;
+.div4 img{
+    height : 240px; 
+    width :230px;
+    position : absolute;
+    top: 1050px;
+    left:320px;
+}
+
+.div4 .item{
+    height:400px;
+    width:400px;
+    left: 420px;
+    top: 1130px;
+}
+
+.div5 img{
+    height : 240px; 
+    width :230px;
+    position : absolute;
+    top: 1050px;
+    left:950px;
+}
+
+.div5 .item{
+    height:400px;
+    width:400px;
+    left: 1070px;
+    top: 1130px;
+}
+
+.div6 img{
+    height : 240px; 
+    width :230px;
+    position : absolute;
+    top: 1050px;
+    left:1590px;
+}
+
+.div6 .item{
+    height:400px;
+    width:400px;
+    left: 1700px;
+    top: 1130px;
+}
+
+.ad1{
+    position:relative;
+    height: 400px;
+    width: 1800px;
 }
