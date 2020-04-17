@@ -9,8 +9,9 @@
 }
 
 input {
+  background-color: darkgrey;
   color: white;
-  border: 3px solid grey;
+  padding: -3px;
   border-radius: 0.25em;
 }
 
