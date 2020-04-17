@@ -8,6 +8,10 @@
     background: transparent;
 }
 
+.img{
+width: 40%;
+}
+
 input {
   background-color: darkgrey;
   color: white;
