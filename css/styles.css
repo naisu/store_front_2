@@ -8,6 +8,13 @@
     background: transparent;
 }
 
+input {
+  color: white;
+  border: 3px solid grey;
+  border-radius: 0.25em;
+}
+
+
 body{
     background-color: seashell;
     background-image: linear-gradient(to top left, lightblue, white);
@@ -259,12 +266,6 @@ hr.divide{
     }
   }
 /*end of banner animation stuff feel free to touch*/
-
-.about{
-  text-align: center;
-  font-size: 2rem;
-  color: black;
-}
 
 
 /*no touchy*/
