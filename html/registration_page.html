@@ -3,62 +3,70 @@
     <head>
         <meta charset="UTF-8">
 	    <title>Welcome to Nook's Cranny!</title> 
-        <link href="../css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../css/contact.css" rel="stylesheet" type="text/css">
+        <script src="../JS/register.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
    </head>
-   
-	
         <center> <!--Centers the Logo-->
             <a href=index.html> <!--Redirect to index.html-->
                 <img class="logo" src="../images/frontpage/logo.png" alt="Nook's Cranny" height >
             </a>
         </center>
-	
-    
     <ul class="topnav">
   <li><a href="index.html">Home</a></li>
   <li><a href="./product_page/product_prototype.html">Products</a></li>
-  <li><a href="contact.html">Contact</a></li>
+  <li><a class="active"  href="contact.html">Contact</a></li>
   <button class="froggybutton" onclick="document.location = './product_page/furniture/froggy_chair.html'">Feeling Froggy?</button>
   <li class="right"><a href="shopping_cart.html"><img class="cart" src="../images/cart.png" alt="Cart"></a></li>
-  <li class="rightActive"><a href="login_page.html">Log In</a></li>
+  <li class="right"><a href="login_page.html">Log In</a></li>
   <li class="right"><input type="text" placeholder ="Search..."> </li>
 </ul>
 
     </header>
-<!--Start from here-->
-	<form action="successful_registration.html">
-  <hr>
-    <h1>Register</h1>
-    <h3>Create your account for Nook's Cranny!</h3>
-		
-    <label for="email">Email:</label>
-    <input type="text" placeholder="Enter Email" name="email" required><br>
-    
-    <label for="username">Username:</label>
-    <input type="text" placeholder="Enter Username" name="username" required><br>
 
-    <label for="psw">Password:</label>
-    <input type="password" placeholder="Enter Password" name="psw" required><br>
+<body>
 
-    <label for="psw-repeat">Repeat Password:</label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+    <div class="wrap">
+        <div class="scrolling-bg"></div>
+    </div>
 
-    <p>Already created an account? <a href="login_page.html">Log in</a></p>
+    <div class="wrapper">
+        <h2>Register</h2>
+        <div id="error_message"></div>
+        <form id="myform" onsubmit="return validation();">
+          <div class="input_field">
+              <input type="text" placeholder="Username" id="name">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Confirm Email" id="cemail">
+          </div>
+          <div class="input_field">
+          <input name="password" type="password" placeholder="password"  id="pass1" required onkeyup="checkPass(); return false;"/>
+            <div id="error-nwl"></div>
+        </div>
 
-    <button type="submit" class="registerbtn">Register</button> <hr>
+        <div class="input_field">
+              <input name="repeatpassword" type="password" placeholder="confirm password" id="pass2" required onkeyup="checkPass(); return false;" />
+              <div id="error-nwl"></div>
+          </div>
 
-</form>
-	
-<!--End here -->
-</center>
+        
+          <div class="btn">
+              <input type="submit" value="Submit"/>
+          </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</form>
+          <p class="message">Have an account? <a href="login_page.html">Login</a></p>
+        </form>
+      </div>
+
 </body>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>
  <footer>
   <div class="Navigation">
 		<center>

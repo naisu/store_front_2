@@ -3,19 +3,16 @@
     <head>
         <meta charset="UTF-8">
 	    <title>Welcome to Nook's Cranny!</title> 
-        <link href="../css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../css/contact.css" rel="stylesheet" type="text/css">
+        <script src="../JS/scripts.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
    </head>
-   
-	
         <center> <!--Centers the Logo-->
             <a href=index.html> <!--Redirect to index.html-->
                 <img class="logo" src="../images/frontpage/logo.png" alt="Nook's Cranny" height >
             </a>
         </center>
-	
-    
     <ul class="topnav">
   <li><a href="index.html">Home</a></li>
   <li><a href="./product_page/product_prototype.html">Products</a></li>
@@ -28,37 +25,40 @@
 
     </header>
 
-<body background = "../images/bg.png">
+<body>
 
+    <div class="wrap">
+        <div class="scrolling-bg"></div>
+    </div>
 
-<hr>
-<br>
-
-</center>
-
-<center>
-	<h1> Contact Us </h1>
-		<img SRC="../images/mail.png" alt="Mail" height ="250" width = "350"/> 
-	<p><b>Have Any Questions?</b></p>
-
-	<form name="login">
-	
-            Name <input type="text" placeholder="Enter Name" name="userid"/>
-			<br>
-            Email <input type="email" placeholder="Enter Email "name="pswrd"/>
-	</form>
-
-	<p>Comments: </p>
-	<div style="border:2px solid black">
-	<p><textarea rows="10" cols="50" name="comments"></textarea></p>
-	<button type="button">Submit</button> 
-	</div>
-</center>
-	
+    <div class="wrapper">
+        <h2>Contact us</h2>
+        <div id="error_message"></div>
+        <form id="myform" onsubmit="return validation();">
+          <div class="input_field">
+              <input type="text" placeholder="Name" id="name">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Subject" id="subject">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Phone" id="phone">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input_field">
+              <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <div class="btn">
+              <input type="submit" value="Send"/>
+          </div>
+        </form>
+      </div>
 
 </body>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br>
  <footer>
   <div class="Navigation">
