@@ -32,9 +32,30 @@
 
 <center>
 <h1>Successfully added to cart!<h1>
+<br>
+Cart Items:
+<div id="cartItems">
+  
+    
+</div>
+<br>
+<div id="totalCost">
+  </div>
+<br>
+Taxes and Fees
+<br>
+15% tax of Cost
+<div id = "taxtotal">
 
+</div>
+<br>
 <form action="./index.html">
 				<input type="submit" value="Continue Shopping"/>
+</form>
+<br>
+<form action= " ./payment_info.html">
+  <input type="submit" value="proceed to payment"/>
+
 </form>
 
 <br><br><br><br><br><br><br>
@@ -47,5 +68,8 @@
 		</center>
 	</div> 
 </footer> 
-
+<script src="./main.js"></script>
+<script>
+  populateItems()
+</script>
 </html>
