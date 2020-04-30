@@ -53,14 +53,20 @@ width: 15%;
 }
 
 input {
-  background-color: darkgrey;
-  color: white;
+  background-color: seashell;
+  color: black;
   border-radius: 0.25em;
+  border:1px solid black;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
 }
 
 button{
-background-color: grey;
+background-color: seashell;
 color: black;
+padding: 0.25em;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 border-radius: 0.25em;
 }
