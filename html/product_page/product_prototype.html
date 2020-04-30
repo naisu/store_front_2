@@ -26,12 +26,20 @@
     </header>
   
     <body>
-
-
-        <center>
-        
-        <h1 style="color:black;">All Products</h1>
-        <h2 style="color:darkred;">Clothing</h2>
+ <center>
+        <script src="../../JS/productDropdown.js"></script>
+        <br>
+        <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Products</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#clothingTag">Clothing</a>
+    <a href="#furnitureTag">Furniture</a>
+    <a href="#flooringTag">Flooring</a>
+    <a href="#wallpaperTag">Wallpapers</a>
+  </div>
+</div>
+<br><br>
+        <h2 id="clothingTag" style="color:darkred;">Clothing</h2>
         <hr>
   <a href="./clothing/dj_cap.html">      
   <p>DJ Cap<p>
@@ -51,7 +59,7 @@
          <img class="img" src = "../../products/5_star.png" >
         </a>
 
-<h2 style="color:darkred;">Furniture</h2>
+<h2 id="furnitureTag" style="color:darkred;">Furniture</h2>
 
 <a href="./furniture/diy_table.html">
 <p>Cute DIY Table<p>
@@ -77,7 +85,7 @@
          <img class="img" src = "../../products/5_star.png" >
        </a>
 
-         <h2 style="color:darkred;">Flooring</h2>
+         <h2 id="flooringTag" style="color:darkred;">Flooring</h2>
 
          <a href="./flooring/boxing_ring_mat.html">
          <p>Boxing-ring Mat<p>
@@ -103,7 +111,7 @@
          <img class="img" src = "../../products/5_star.png" >
        </a>
 
-         <h2 style="color:darkred;">Wallpapers</h2>
+         <h2 id="wallpaperTag" style="color:darkred;">Wallpapers</h2>
 
 <a href="./wallpapers/basic_wall.html">
          <p>Basic Wall<p>
@@ -149,5 +157,6 @@
 
 
 
+</html>
 <script src="../../main.js"></script></html>
 
