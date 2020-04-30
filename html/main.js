@@ -1,4 +1,3 @@
-
 function addToCart(name, cost, image){
 
 	var myCart = localStorage.getItem("myCart")
@@ -94,6 +93,8 @@ function populateItems(){
 		document.getElementById("taxtotal").innerHTML = "<h2>Total: "+taxtotal+" Bells</h2>";
 
 	}
-
 }
 
+function emptyShoppingCart(){
+	localStorage.setItem("myCart", null);
+}
