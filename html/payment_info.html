@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <head>
+        <meta charset="UTF-8">
+	    <title>Welcome to Nook's Cranny!</title> 
+        <link href="../css/styles.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ready to pay?</title> <!--Change-->
-</head>
-
-<body background = "../images/bg.png">
-<center> <!--Centers the Logo-->
-	<a href=index.html> <!--Redirect to index.html-->
-		<img src="../images/nooks_cranny.png" alt="Nook's Cranny" height = "100" width = "250"> <!--Change-->
-	</a>
-	<br>
+  
+   </head>
+   
 	
-	<div class="Navigation">
-	<center>
-	<font size = "50"> <a href=faq.html>Home</a> </font>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<font size = "50"> <a href=../product_page/product_prototype.html>Products</a> </font>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<font size = "50"><a href=contact.html>Contact Us</a> </font>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<font size = "50"><input type="text" placeholder ="Search..."> </font>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<font size = "50"><a href=login_page.html>Login</a></font>
-  </center>
+        <center> <!--Centers the Logo-->
+            <a href=index.html> <!--Redirect to index.html-->
+                <img class="logo" src="../images/frontpage/logo.png" alt="Nook's Cranny" height >
+            </a>
+        </center>
+	
+    
+    <ul class="topnav">
+  <li><a  href="index.html">Home</a></li>
+  <li><a href="./product_page/product_prototype.html">Products</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <button class="froggybutton" onclick="document.location = './product_page/furniture/froggy_chair.html'">Feeling Froggy?</button>
+  <li class="right"><a href="shopping_cart.html"><img class="cart" src="../images/cart.png" alt="Cart"></a></li>
+  <li class="right"><a href="login_page.html">Log In</a></li>
+  <li class="right"><input type="text" placeholder ="Search..."> </li>
+</ul>
+
+    </header>
   <hr>
   <br><br><br>
   
@@ -42,16 +44,16 @@
 </select>
 	<br><br>
 
-	<p>Payment Details <img src="./images/credit_card.png" alt="Credit Card" height="40" width="250" align="middle"></p>
+	<p>Payment Details <img src="./images/credit_card.png" alt="Credit Card" height="40" width="250" align ="middle"></p>
 	
 	
 	<form name="payment">
-            First Name <input type="text" name="fname" size ="20"/>
-            Last Name <input type="text" name="lname" size ="20"/>
+            First Name <input type="text" name="fname" id="fname" size ="20" required/>
+            Last Name <input type="text" name="lname" id="lname" size ="20" required/>
 			<br><br>
-			Credit Card <input type="text" name="cc" size ="28"/>
-			CVV <input type="text" name="cvv"/>
-	</form>
+			Credit Card <input type="number" name="cc" id="cc" size ="16" required/>
+			CVV <input type="number" id="cvv" name="cvv" maxlength="3" required/>
+    </form>
 	
 <br>
 
@@ -83,13 +85,13 @@
 <h2>Billing Address</h2>
 
 	<form name="address">
-            Street Address <input type="text" name="sadress" size ="66"/>
+            Street Address <input type="text" name="sadress" id="sadress" size ="66" required>
 			<br><br>
-            City <input type="text" name="city" size ="33"/>
+            City <input type="text" name="city" id="city" size ="33" required/>
 
-			Postal/Zip Code <input type="text" name="zip"/>
+			Postal/Zip Code <input type="number" id="zip" name="zip" required/>
 			<br><br>
-			State/Province/Region <input type="text" name="location" size ="28"/>
+			State/Province/Region <input type="text" id="location" name="location" size ="28" required/>
 			<br><br>
 	</form>
 	
@@ -340,10 +342,13 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><
-
-<hr>
-
+            <br><br><br>
+            <form action= " ./viewCarDetails.html">
+            <button onclick="storeCreditCardDetails()">Pay</button>
+            <button id="paymentDone1" style="display: none;">Payment Completed</button>
+            <!-- <a id="paymentDone2" href="./viewCarDetails.html" style="display: none;">View Details</a> -->
+            <br><br><br><br><br><br>
+            </form>
 <body>
  <footer>
   <div class="Navigation">
@@ -354,5 +359,5 @@
 		</center>
 	</div> 
 </footer> 
-
+<script src="./main.js"></script>
 </html>
